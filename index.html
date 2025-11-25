@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameVault - Premium Gaming Showcase</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Intro Animation -->
+    <div id="intro-loader">
+        <div class="loader-content">
+            <div class="logo-animation">
+                <i class="fas fa-gamepad"></i>
+                <h1>GameVault</h1>
+            </div>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-gamepad"></i>
+                <span>GameVault</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#games" class="nav-link">Games</a></li>
+                <li><a href="pages/about.html" class="nav-link">About</a></li>
+                <li><a href="pages/contact.html" class="nav-link">Contact</a></li>
+                <li><a href="pages/feedback.html" class="nav-link">Feedback</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Discover Amazing Games</h1>
+            <p class="hero-subtitle">Explore our curated collection of premium gaming experiences</p>
+            <button class="cta-button" onclick="scrollToGames()">
+                <span>Explore Games</span>
+                <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-card"></div>
+                <div class="floating-card"></div>
+                <div class="floating-card"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Games Section -->
+    <section id="games" class="games-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Games</h2>
+                <p>Click on any game to learn more</p>
+            </div>
+            
+            <div class="games-grid" id="gamesGrid">
+                <!-- Games will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <img id="modalImage" src="" alt="">
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <div class="game-meta">
+                        <span id="modalGenre"></span>
+                        <span id="modalRating"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-body">
+                <p id="modalDescription"></p>
+                <div class="modal-features">
+                    <h3>Key Features</h3>
+                    <ul id="modalFeatures"></ul>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a id="modalLink" href="#" target="_blank" class="play-button">
+                    <i class="fas fa-play"></i>
+                    Play Now
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-gamepad"></i>
+                        <span>GameVault</span>
+                    </div>
+                    <p>Your premium destination for amazing gaming experiences.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#games">Games</a></li>
+                        <li><a href="pages/about.html">About</a></li>
+                        <li><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-steam"></i></a>
+                        <a href="#"><i class="fab fa-twitch"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GameVault. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
